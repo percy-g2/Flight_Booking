@@ -1,9 +1,11 @@
-package com.androdevlinux.percy.bitfly;
+package com.androdevlinux.percy.bitfly.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.androdevlinux.percy.bitfly.R;
 
 /**
  * Created by percy on 12-09-2016.
