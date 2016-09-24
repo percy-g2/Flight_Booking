@@ -17,7 +17,7 @@ public class Login extends Fragment {
 
     private View rootView;
 
-    void Login () {}
+    public Login () {}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -5,6 +5,9 @@
     <string name="app_login">Login</string>
     <string name="app_search_flights">Search Flights</string>
 
+    <string name="app_sign_with_google">Sign in with google</string>
+    <string name="app_sign_with_facebook">Sign in with facebook</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
