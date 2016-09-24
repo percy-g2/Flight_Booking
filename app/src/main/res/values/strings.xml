@@ -2,6 +2,9 @@
     <string name="app_name">BitFly</string>
     <string name="app_web_link">www.bitfly.in</string>
 
+    <string name="app_login">Login</string>
+    <string name="app_search_flights">Search Flights</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 

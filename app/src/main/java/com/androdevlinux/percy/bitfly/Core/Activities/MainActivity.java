@@ -90,9 +90,10 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_login) {
             fragment = new Login();
+            title = getString(R.string.app_login);
             // Handle the login action
         } else if (id == R.id.nav_search) {
-
+            title = getString(R.string.app_search_flights);
         } /*else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
