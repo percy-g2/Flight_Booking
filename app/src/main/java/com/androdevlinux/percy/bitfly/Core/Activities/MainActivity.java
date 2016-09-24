@@ -1,4 +1,4 @@
-package com.androdevlinux.percy.bitfly.Activities;
+package com.androdevlinux.percy.bitfly.Core.Activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
