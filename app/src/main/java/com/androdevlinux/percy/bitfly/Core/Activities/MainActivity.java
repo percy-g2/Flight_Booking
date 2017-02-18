@@ -2,7 +2,9 @@ package com.androdevlinux.percy.bitfly.Core.Activities;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -39,24 +41,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         mAuth = FirebaseAuth.getInstance();
-
-        mAuth.createUserWithEmailAndPassword("proxthehacker@gmail.com", "xyz@215")
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
-
-                        // If sign in fails, display a message to the user. If sign in succeeds
-                        // the auth state listener will be notified and logic to handle the
-                        // signed in user can be handled in the listener.
-                        if (!task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-
-                        // ...
-                    }
-                });
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -137,15 +121,18 @@ public class MainActivity extends AppCompatActivity
         String title = getString(R.string.app_name);
 
         if (id == R.id.nav_login) {
-            fragment = new Login();
+            Intent intent = new Intent(this, SignInActivity.class);
+            startActivity(intent);
             title = getString(R.string.app_login);
             // Handle the login action
         } else if (id == R.id.nav_search) {
             fragment = new Search();
             title = getString(R.string.app_search_flights);
-        } /*else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_profile) {
+            Intent intent = new Intent(this, Profile.class);
+            startActivity(intent);
+            title = getString(R.string.app_profile);
+        } /*else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
 

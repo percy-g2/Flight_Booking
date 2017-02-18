@@ -2,8 +2,9 @@
     <string name="app_name">BitFly</string>
     <string name="app_web_link">www.bitfly.in</string>
 
-    <string name="app_login">Login</string>
+    <string name="app_login">Sign In</string>
     <string name="app_search_flights">Search Flights</string>
+    <string name="app_profile">Profile</string>
 
     <string name="app_sign_with_google">Sign in with google</string>
     <string name="app_sign_with_facebook">Sign in with facebook</string>
@@ -12,4 +13,20 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_new_email">New Email</string>
+    <string name="hint_old_email">Old Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="forgot_password">Forgot Your Password</string>
+    <string name="sign_in">Already Registered. Login Me!</string>
+    <string name="sign_up">Sign UP</string>
+    <string name="btn_change_email">CHANGE EMAIL</string>
+    <string name="btn_change_password">CHANGE PASSWORD</string>
+    <string name="btn_send_reset">SEND PASSWORD RESET EMAIL</string>
+    <string name="btn_remove">REMOVE USER</string>
+    <string name="change_email">CHANGE EMAIL</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="btn_sign_out">SIGN OUT</string>
 </resources>
