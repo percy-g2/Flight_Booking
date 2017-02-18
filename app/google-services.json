@@ -1,33 +1,35 @@
 {
   "project_info": {
-    "project_number": "734872013889",
-    "project_id": "api-project-734872013889"
+    "project_number": "698860155027",
+    "firebase_url": "https://fir-27b5a.firebaseio.com",
+    "project_id": "fir-27b5a",
+    "storage_bucket": "fir-27b5a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:734872013889:android:fca3726c6de4f95f",
+        "mobilesdk_app_id": "1:698860155027:android:fca3726c6de4f95f",
         "android_client_info": {
           "package_name": "com.androdevlinux.percy.bitfly"
         }
       },
       "oauth_client": [
         {
-          "client_id": "734872013889-1pffej60jrnjecuhlei97m6g2e3935em.apps.googleusercontent.com",
+          "client_id": "698860155027-esrou58cc2fps8l8cc5st64vka17fue7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.androdevlinux.percy.bitfly",
-            "certificate_hash": "CEE3A9F5C6398E7CC2C0F687CFF2BA9066628B1E"
+            "certificate_hash": "C778C72B98DBB1E45237FC37DBBDB198119BF8D2"
           }
         },
         {
-          "client_id": "734872013889-q9ao9g3go326l08ps1f5qo7sbtpmkhip.apps.googleusercontent.com",
+          "client_id": "698860155027-knf6k3lav5vm9tcb75ctqa7p9gmvm04i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBSstBGMtacKqdJjJObzFy5BWL0x7Refkg"
+          "current_key": "AIzaSyDJdslh2JVemM8gCcy_WHD_jeYMsSnMwYU"
         }
       ],
       "services": {
@@ -35,11 +37,16 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698860155027-knf6k3lav5vm9tcb75ctqa7p9gmvm04i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }
