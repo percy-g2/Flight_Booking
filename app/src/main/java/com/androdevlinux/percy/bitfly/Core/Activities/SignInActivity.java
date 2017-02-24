@@ -3,16 +3,14 @@ package com.androdevlinux.percy.bitfly.Core.Activities;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.androdevlinux.percy.bitfly.Core.Database.User;
@@ -26,6 +24,10 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 /**
  * Created by percy on 18/02/2017.
  */
@@ -34,6 +36,18 @@ import com.google.firebase.database.FirebaseDatabase;
 public class SignInActivity extends BaseActivity implements View.OnClickListener {
 
     private static final String TAG = "SignInActivity";
+    @BindView(R.id.email)
+    EditText email;
+    @BindView(R.id.password)
+    EditText password;
+    @BindView(R.id.sign_up_button)
+    Button signUpButton;
+    @BindView(R.id.sign_in_button)
+    Button signInButton;
+    @BindView(R.id.btn_reset_password)
+    Button btnResetPassword;
+    @BindView(R.id.progressBar)
+    ProgressBar progressBar;
 
     private DatabaseReference mDatabase;
     private FirebaseAuth mAuth;
@@ -47,6 +61,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+        ButterKnife.bind(this);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
@@ -54,12 +69,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         // Views
         mEmailField = (EditText) findViewById(R.id.email);
         mPasswordField = (EditText) findViewById(R.id.password);
-        mSignInButton = (Button) findViewById(R.id.sign_in_button);
-        mSignUpButton = (Button) findViewById(R.id.sign_up_button);
 
-        // Click listeners
-        mSignInButton.setOnClickListener(this);
-        mSignUpButton.setOnClickListener(this);
     }
 
     @Override
@@ -138,7 +148,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
         if (fragment != null) {
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-           // fragmentTransaction.replace(R.id.act, fragment);
+            // fragmentTransaction.replace(R.id.act, fragment);
             fragmentTransaction.commit();
         }
 
@@ -180,13 +190,17 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
     }
     // [END basic_write]
 
-    @Override
-    public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.sign_in_button) {
-            signIn();
-        } else if (i == R.id.sign_up_button) {
-            signUp();
+    @OnClick({R.id.sign_up_button, R.id.sign_in_button, R.id.btn_reset_password})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.sign_up_button:
+                signUp();
+                break;
+            case R.id.sign_in_button:
+                signIn();
+                break;
+            case R.id.btn_reset_password:
+                break;
         }
     }
 }

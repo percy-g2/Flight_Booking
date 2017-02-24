@@ -64,7 +64,8 @@
             android:background="@color/colorPrimaryDark"
             android:text="@string/btn_change_email"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:filterTouchesWhenObscured="true" />
 
         <Button
             android:id="@+id/change_password_button"
@@ -75,7 +76,8 @@
             android:background="@color/colorPrimaryDark"
             android:text="@string/btn_change_password"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:filterTouchesWhenObscured="true" />
 
         <Button
             android:id="@+id/sending_pass_reset_button"
@@ -86,7 +88,8 @@
             android:background="@color/colorPrimaryDark"
             android:text="@string/btn_send_reset"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:filterTouchesWhenObscured="true" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -103,7 +106,8 @@
             android:background="@color/colorPrimaryDark"
             android:text="@string/btn_remove"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:filterTouchesWhenObscured="true" />
 
         <Button
             android:id="@+id/sign_out"
@@ -114,7 +118,8 @@
             android:background="@color/colorPrimary"
             android:text="@string/btn_sign_out"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:filterTouchesWhenObscured="true" />
 
     </LinearLayout>
 

@@ -65,7 +65,8 @@
             android:background="@color/colorAccent"
             android:text="@string/sign_up"
             android:textColor="@android:color/black"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:filterTouchesWhenObscured="true" />
 
         <Button
             android:id="@+id/sign_in_button"
@@ -76,7 +77,8 @@
             android:text="@string/sign_in"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:filterTouchesWhenObscured="true" />
         <Button
             android:id="@+id/btn_reset_password"
             android:layout_width="fill_parent"
@@ -85,7 +87,8 @@
             android:background="@null"
             android:text="@string/forgot_password"
             android:textAllCaps="false"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/colorAccent"
+            android:filterTouchesWhenObscured="true" />
 
         <!-- Link to Login Screen -->
 
